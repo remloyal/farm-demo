@@ -3,10 +3,9 @@ import "./main.css";
 import reactLogo from "./assets/react.svg";
 import FarmLogo from "./assets/logo.png";
 import { HomePage } from "./pages/index";
-
+import { contDom } from "./pages/HomePage";
 export function Main() {
   const [count, setCount] = useState(0);
-
   return (
     <>
       <div>
@@ -31,6 +30,7 @@ export function Main() {
       </p>
 
       <HomePage />
+      {contDom()}
     </>
   );
 }
